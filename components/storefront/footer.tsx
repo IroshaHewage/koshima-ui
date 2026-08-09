@@ -41,9 +41,9 @@ export function Footer() {
             everything else. Operated by Niko Holdings (PVT) Ltd, Kurunegala.
           </p>
           <div className="font-mono text-[12.5px] leading-loose text-white/[0.42]">
-            +94 37 222 8100
+            0372 041 201
             <br />
-            hello@koshimamall.lk
+            hello@koshimamall.com
           </div>
         </div>
         {FOOTER_COLS.map((col) => (
