@@ -3,7 +3,11 @@ import Link from "next/link"
 const STEPS = [
   { key: "address", title: "Address", href: "/checkout/address" },
   { key: "shipping", title: "Shipping", href: "/checkout/shipping" },
-  { key: "international", title: "International", href: "/checkout/international" },
+  {
+    key: "international",
+    title: "International",
+    href: "/checkout/international",
+  },
   { key: "payment", title: "Payment", href: "/checkout/payment" },
   { key: "review", title: "Review", href: "/checkout/review" },
 ] as const
@@ -26,7 +30,7 @@ export function CheckoutSteps({ current }: { current: StepKey }) {
                 className="flex items-center gap-2.5 text-inherit no-underline"
               >
                 <div
-                  className={`flex h-[26px] w-[26px] flex-none items-center justify-center rounded-full font-bold text-[11.5px] ${
+                  className={`flex h-[26px] w-[26px] flex-none items-center justify-center rounded-full text-[11.5px] font-bold ${
                     on
                       ? "bg-[#2563EB] text-white"
                       : done

@@ -26,7 +26,10 @@ export function Footer() {
     <div className="mt-14 bg-[#0B1220] text-white/60">
       <div className="mx-auto grid max-w-[1360px] grid-cols-[1.5fr_1fr_1fr_1fr_1.2fr] gap-9 px-7 pt-[52px] pb-7">
         <div>
-          <Link href="/" className="mb-4 flex items-center gap-[11px] no-underline">
+          <Link
+            href="/"
+            className="mb-4 flex items-center gap-[11px] no-underline"
+          >
             <Image
               src="/images/koshima-mall-logo.png"
               alt="Koshima Mall"
@@ -34,7 +37,9 @@ export function Footer() {
               height={194}
               className="h-[30px] w-auto brightness-0 invert"
             />
-            <div className="font-extrabold text-base text-white">Koshima Mall</div>
+            <div className="text-base font-extrabold text-white">
+              Koshima Mall
+            </div>
           </Link>
           <p className="mb-[18px] max-w-[270px] text-[13px] leading-relaxed">
             Sri Lanka&apos;s multi-vendor marketplace for health, beauty and
@@ -48,7 +53,9 @@ export function Footer() {
         </div>
         {FOOTER_COLS.map((col) => (
           <div key={col.title}>
-            <div className="mb-[15px] font-bold text-xs text-white">{col.title}</div>
+            <div className="mb-[15px] text-xs font-bold text-white">
+              {col.title}
+            </div>
             {col.links.map((l) => (
               <Link
                 key={l}
@@ -61,19 +68,21 @@ export function Footer() {
           </div>
         ))}
         <div>
-          <div className="mb-[15px] font-bold text-xs text-white">Stay in the loop</div>
+          <div className="mb-[15px] text-xs font-bold text-white">
+            Stay in the loop
+          </div>
           <div className="mb-3.5 flex overflow-hidden rounded-[9px] border border-white/[0.16]">
             <input
               placeholder="Your email"
               className="flex-1 border-none bg-transparent px-3.5 py-2.5 text-[12.5px] text-white outline-none"
             />
-            <button className="cursor-pointer border-none bg-[#2563EB] px-[15px] font-semibold text-xs text-white">
+            <button className="cursor-pointer border-none bg-[#2563EB] px-[15px] text-xs font-semibold text-white">
               Join
             </button>
           </div>
           <div className="text-[11.5px] leading-relaxed text-white/[0.35]">
-            By joining you accept our Privacy Policy. Unsubscribe anytime
-            (PDPA No. 9 of 2022).
+            By joining you accept our Privacy Policy. Unsubscribe anytime (PDPA
+            No. 9 of 2022).
           </div>
         </div>
       </div>
@@ -85,7 +94,7 @@ export function Footer() {
           {GATEWAYS.map((g) => (
             <span
               key={g}
-              className="rounded border border-white/[0.14] px-2 py-1.5 font-semibold text-[10px] text-white/[0.55]"
+              className="rounded border border-white/[0.14] px-2 py-1.5 text-[10px] font-semibold text-white/[0.55]"
             >
               {g}
             </span>

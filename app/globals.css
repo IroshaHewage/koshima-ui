@@ -118,6 +118,26 @@
     --radius-4xl: calc(var(--radius) * 2.6);
 }
 
+@keyframes koshima-drift {
+  0%,
+  100% {
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+  50% {
+    transform: translate3d(0, -4%, 0) scale(1.12);
+  }
+}
+
+.koshima-drift {
+  animation: koshima-drift 16s ease-in-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .koshima-drift {
+    animation: none;
+  }
+}
+
 @layer base {
   * {
     @apply border-border outline-ring/50;

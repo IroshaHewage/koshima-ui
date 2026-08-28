@@ -1,3 +1,4 @@
+import type { Metadata } from "next"
 import {
   IBM_Plex_Mono,
   Instrument_Serif,
@@ -7,7 +8,19 @@ import {
 
 import "./globals.css"
 import { ThemeProvider } from "@/components/theme-provider"
-import { cn } from "@/lib/utils";
+import { cn } from "@/lib/utils"
+
+export const metadata: Metadata = {
+  title: "Koshima Mall",
+  description: "Koshima Mall is opening soon.",
+  // Pre-launch: keep every page out of search indexes.
+  robots: {
+    index: false,
+    follow: false,
+    nocache: true,
+    googleBot: { index: false, follow: false },
+  },
+}
 
 const instrumentSerif = Instrument_Serif({
   subsets: ["latin"],

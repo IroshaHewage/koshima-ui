@@ -5,11 +5,26 @@ import Link from "next/link"
 import { useRouter } from "next/navigation"
 import * as React from "react"
 
-import { NAV_CATS, SIDE_CATS, SUGGESTIONS, SUGGEST_PRODUCTS, storefrontImg } from "@/lib/storefront/data"
+import {
+  NAV_CATS,
+  SIDE_CATS,
+  SUGGESTIONS,
+  SUGGEST_PRODUCTS,
+  storefrontImg,
+} from "@/lib/storefront/data"
 
-function Logo({ dark = false, size = "md" }: { dark?: boolean; size?: "md" | "sm" }) {
+function Logo({
+  dark = false,
+  size = "md",
+}: {
+  dark?: boolean
+  size?: "md" | "sm"
+}) {
   return (
-    <Link href="/" className="flex flex-none cursor-pointer items-center gap-[11px]">
+    <Link
+      href="/"
+      className="flex flex-none cursor-pointer items-center gap-[11px]"
+    >
       <Image
         src="/images/koshima-mall-logo.png"
         alt="Koshima Mall"
@@ -19,7 +34,9 @@ function Logo({ dark = false, size = "md" }: { dark?: boolean; size?: "md" | "sm
         priority
       />
       <div>
-        <div className={`font-extrabold text-lg tracking-[-0.02em] ${dark ? "text-white" : ""}`}>
+        <div
+          className={`text-lg font-extrabold tracking-[-0.02em] ${dark ? "text-white" : ""}`}
+        >
           Koshima Mall
         </div>
         {size === "md" ? (
@@ -56,7 +73,7 @@ function SearchBox() {
   return (
     <div ref={wrapRef} className="relative max-w-[720px] flex-1">
       <div className="flex h-[46px] items-center overflow-hidden rounded-[10px] border-2 border-[#101725]">
-        <div className="flex h-full cursor-pointer items-center gap-[7px] border-r border-[#E5E8EE] px-3.5 font-semibold text-[13px] whitespace-nowrap text-[#48505E]">
+        <div className="flex h-full cursor-pointer items-center gap-[7px] border-r border-[#E5E8EE] px-3.5 text-[13px] font-semibold whitespace-nowrap text-[#48505E]">
           All categories <span className="text-[9px] text-[#98A1AF]">▾</span>
         </div>
         <input
@@ -71,7 +88,7 @@ function SearchBox() {
         />
         <button
           onClick={() => submit(value || "vitamin c serum")}
-          className="h-full cursor-pointer border-none bg-[#2563EB] px-6 font-semibold text-[13.5px] text-white hover:bg-[#1D4ED8]"
+          className="h-full cursor-pointer border-none bg-[#2563EB] px-6 text-[13.5px] font-semibold text-white hover:bg-[#1D4ED8]"
         >
           Search
         </button>
@@ -90,7 +107,9 @@ function SearchBox() {
             >
               <span className="text-[13px] text-[#98A1AF]">⌕</span>
               <span className="flex-1 text-[13.5px]">{s.q}</span>
-              <span className="font-mono text-[11.5px] text-[#B3BAC6]">{s.n}</span>
+              <span className="font-mono text-[11.5px] text-[#B3BAC6]">
+                {s.n}
+              </span>
             </div>
           ))}
           <div className="border-t border-b border-[#EEF0F4] px-4 py-3 font-mono text-[10.5px] font-semibold tracking-[0.06em] text-[#98A1AF]">
@@ -103,13 +122,20 @@ function SearchBox() {
               className="flex items-center gap-3 px-4 py-2.5 text-inherit no-underline hover:bg-[#F6F7F9]"
             >
               <div className="relative h-[42px] w-[42px] flex-none overflow-hidden rounded-md">
-                <Image src={storefrontImg(p.img)} alt={p.name} fill className="object-cover" />
+                <Image
+                  src={storefrontImg(p.img)}
+                  alt={p.name}
+                  fill
+                  className="object-cover"
+                />
               </div>
               <div className="flex-1">
                 <div className="text-[13px] leading-[1.3]">{p.name}</div>
-                <div className="mt-1 font-mono text-[11px] text-[#98A1AF]">{p.seller}</div>
+                <div className="mt-1 font-mono text-[11px] text-[#98A1AF]">
+                  {p.seller}
+                </div>
               </div>
-              <div className="font-bold text-[13px]">Rs {p.price}</div>
+              <div className="text-[13px] font-bold">Rs {p.price}</div>
             </Link>
           ))}
           <div className="bg-[#F6F7F9] px-4 py-2.5 font-mono text-[11.5px] text-[#98A1AF]">
@@ -127,8 +153,9 @@ export function Header({ variant = "full" }: { variant?: "full" | "slim" }) {
       <div className="border-b border-[#EEF0F4] bg-white">
         <div className="mx-auto flex h-[74px] max-w-[1160px] items-center justify-between px-7">
           <Logo size="sm" />
-          <div className="flex items-center gap-2.5 font-medium text-[12.5px] text-[#12805C]">
-            <span className="text-sm">🔒</span> Secure checkout · TLS 1.2+ · gateway tokenized
+          <div className="flex items-center gap-2.5 text-[12.5px] font-medium text-[#12805C]">
+            <span className="text-sm">🔒</span> Secure checkout · TLS 1.2+ ·
+            gateway tokenized
           </div>
         </div>
       </div>
@@ -137,7 +164,7 @@ export function Header({ variant = "full" }: { variant?: "full" | "slim" }) {
 
   return (
     <>
-      <div className="bg-[#0B1220] font-medium text-xs text-white/[0.72]">
+      <div className="bg-[#0B1220] text-xs font-medium text-white/[0.72]">
         <div className="mx-auto flex h-[38px] max-w-[1360px] items-center justify-between px-7">
           <div className="flex items-center gap-[22px]">
             <span>Free delivery islandwide over Rs 10,000</span>
@@ -145,17 +172,22 @@ export function Header({ variant = "full" }: { variant?: "full" | "slim" }) {
             <span>We ship worldwide via Sri Lanka Post</span>
           </div>
           <div className="flex items-center gap-[18px]">
-            <Link href="/order/track" className="text-inherit no-underline hover:text-white">
+            <Link
+              href="/order/track"
+              className="text-inherit no-underline hover:text-white"
+            >
               Track order
             </Link>
             <span className="cursor-pointer hover:text-white">Help</span>
-            <span className="cursor-pointer hover:text-white">Sell on Koshima</span>
+            <span className="cursor-pointer hover:text-white">
+              Sell on Koshima
+            </span>
             <div className="h-4 w-px bg-white/[0.18]" />
             <div className="flex items-center gap-0.5 rounded-md bg-white/[0.07] p-[3px]">
-              <span className="rounded bg-[#2563EB] px-2 py-1 font-semibold text-[11px] text-white">
+              <span className="rounded bg-[#2563EB] px-2 py-1 text-[11px] font-semibold text-white">
                 EN
               </span>
-              <span className="rounded px-2 py-1 font-semibold text-[11px] text-white/60">
+              <span className="rounded px-2 py-1 text-[11px] font-semibold text-white/60">
                 සිං
               </span>
             </div>
@@ -176,15 +208,15 @@ export function Header({ variant = "full" }: { variant?: "full" | "slim" }) {
               className="flex flex-col items-center gap-1 text-[#48505E] no-underline hover:text-[#2563EB]"
             >
               <div className="text-[17px] leading-none">⇄</div>
-              <div className="font-medium text-[11px]">Compare</div>
+              <div className="text-[11px] font-medium">Compare</div>
             </Link>
             <Link
               href="/wishlist"
               className="relative flex flex-col items-center gap-1 text-[#48505E] no-underline hover:text-[#2563EB]"
             >
               <div className="text-[17px] leading-none">♡</div>
-              <div className="font-medium text-[11px]">Wishlist</div>
-              <div className="absolute -top-[5px] right-[2px] rounded-full bg-[#E4614C] px-[5px] py-[3px] font-bold text-[9.5px] text-white">
+              <div className="text-[11px] font-medium">Wishlist</div>
+              <div className="absolute -top-[5px] right-[2px] rounded-full bg-[#E4614C] px-[5px] py-[3px] text-[9.5px] font-bold text-white">
                 6
               </div>
             </Link>
@@ -193,19 +225,23 @@ export function Header({ variant = "full" }: { variant?: "full" | "slim" }) {
               className="relative flex flex-col items-center gap-1 text-[#48505E] no-underline hover:text-[#2563EB]"
             >
               <div className="text-[17px] leading-none">⌂</div>
-              <div className="font-medium text-[11px]">Cart</div>
-              <div className="absolute -top-[5px] -right-[2px] rounded-full bg-[#2563EB] px-[5px] py-[3px] font-bold text-[9.5px] text-white">
+              <div className="text-[11px] font-medium">Cart</div>
+              <div className="absolute -top-[5px] -right-[2px] rounded-full bg-[#2563EB] px-[5px] py-[3px] text-[9.5px] font-bold text-white">
                 3
               </div>
             </Link>
             <div className="h-8 w-px bg-[#EEF0F4]" />
             <div className="flex cursor-pointer items-center gap-[9px]">
-              <div className="flex h-[34px] w-[34px] items-center justify-center rounded-full bg-[#EEF3FE] font-bold text-[13px] text-[#2563EB]">
+              <div className="flex h-[34px] w-[34px] items-center justify-center rounded-full bg-[#EEF3FE] text-[13px] font-bold text-[#2563EB]">
                 NP
               </div>
               <div>
-                <div className="font-medium text-[10.5px] text-[#98A1AF]">Hello,</div>
-                <div className="mt-[3px] font-bold text-[12.5px]">Nimasha ▾</div>
+                <div className="text-[10.5px] font-medium text-[#98A1AF]">
+                  Hello,
+                </div>
+                <div className="mt-[3px] text-[12.5px] font-bold">
+                  Nimasha ▾
+                </div>
               </div>
             </div>
           </div>
@@ -213,7 +249,7 @@ export function Header({ variant = "full" }: { variant?: "full" | "slim" }) {
         <div className="mx-auto flex h-11 max-w-[1360px] items-center gap-[26px] border-t border-[#F3F5F8] px-7">
           <Link
             href="/category"
-            className="flex items-center gap-[7px] font-bold text-[13px] text-[#2563EB] no-underline"
+            className="flex items-center gap-[7px] text-[13px] font-bold text-[#2563EB] no-underline"
           >
             ☰ Shop by category
           </Link>
@@ -221,12 +257,12 @@ export function Header({ variant = "full" }: { variant?: "full" | "slim" }) {
             <Link
               key={c}
               href="/category"
-              className="cursor-pointer font-medium text-[13px] whitespace-nowrap text-[#48505E] no-underline hover:text-[#101725]"
+              className="cursor-pointer text-[13px] font-medium whitespace-nowrap text-[#48505E] no-underline hover:text-[#101725]"
             >
               {c}
             </Link>
           ))}
-          <span className="ml-auto flex cursor-pointer items-center gap-1.5 font-bold text-[12.5px] whitespace-nowrap text-[#E4614C]">
+          <span className="ml-auto flex cursor-pointer items-center gap-1.5 text-[12.5px] font-bold whitespace-nowrap text-[#E4614C]">
             ● Avurudu Flash Sale
           </span>
         </div>
@@ -242,7 +278,7 @@ export function CategorySidebar() {
         <Link
           key={c}
           href="/category"
-          className="flex cursor-pointer items-center justify-between px-4 py-2.5 font-medium text-[13px] text-[#48505E] no-underline hover:bg-[#F6F7F9] hover:text-[#2563EB]"
+          className="flex cursor-pointer items-center justify-between px-4 py-2.5 text-[13px] font-medium text-[#48505E] no-underline hover:bg-[#F6F7F9] hover:text-[#2563EB]"
         >
           {c}
           <span className="text-[11px] text-[#C9CFDA]">›</span>
