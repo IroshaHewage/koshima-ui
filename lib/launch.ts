@@ -1,11 +1,11 @@
 /**
  * Koshima Mall public launch.
  *
- * Target: September 1, 2026, 12:00 PM Sri Lanka time (UTC+05:30).
+ * Target: September 2, 2026, 12:00 PM Sri Lanka time (UTC+05:30).
  * Stored as an absolute instant so server and client agree regardless of
  * the viewer's own timezone.
  */
-export const LAUNCH_ISO = "2026-09-01T12:00:00+05:30"
+export const LAUNCH_ISO = "2026-09-02T12:00:00+05:30"
 
 export const LAUNCH_TS = new Date(LAUNCH_ISO).getTime()
 
