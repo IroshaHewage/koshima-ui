@@ -10,7 +10,7 @@ export const LAUNCH_ISO = "2026-09-03T00:00:00+05:30";
 export const LAUNCH_TS = new Date(LAUNCH_ISO).getTime()
 
 /** When the "coming soon" campaign started — used only to draw the progress bar. */
-export const CAMPAIGN_START_TS = new Date("2026-08-01T00:00:00+05:30").getTime()
+export const CAMPAIGN_START_TS = new Date("2026-08-01T12:00:00+05:30").getTime()
 
 /** Path the proxy rewrites every request to while we are still counting down. */
 export const COMING_SOON_PATH = "/coming-soon"
