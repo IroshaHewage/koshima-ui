@@ -110,7 +110,7 @@ export default function ProductPage() {
             <div className="mb-5 rounded-xl bg-[#FDF3F0] p-5">
               <div className="flex items-baseline gap-3">
                 <span className="text-[32px] font-extrabold text-[#C2352B]">
-                  Rs {p.price}.00
+                  Rs .00
                 </span>
                 <span className="text-base text-[#B08880] line-through">
                   Rs {p.was}.00
