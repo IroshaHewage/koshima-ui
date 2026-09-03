@@ -156,24 +156,6 @@ export default function CheckoutShippingPage() {
               </Link>
             </div>
           </div>
-
-          <div className="sticky top-6 rounded-xl border border-[#E5E8EE] bg-white p-[20px_22px]">
-            <div className="mb-4 text-[14.5px] font-bold">Your order</div>
-            {CART_SUMMARY.map((r) => (
-              <div key={r.k} className="mb-2.5 flex justify-between">
-                <span className="text-[13px] text-[#48505E]">{r.k}</span>
-                <span
-                  className={`text-[13px] font-semibold ${r.positive ? "text-[#12805C]" : ""}`}
-                >
-                  {r.v}
-                </span>
-              </div>
-            ))}
-            <div className="mt-1 flex items-baseline justify-between border-t border-[#EEF0F4] pt-3.5">
-              <span className="text-sm font-bold">Total</span>
-              <span className="text-xl font-extrabold">Rs 21,320</span>
-            </div>
-          </div>
         </div>
       </div>
 
