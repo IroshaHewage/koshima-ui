@@ -252,30 +252,6 @@ export default function ProductPage() {
               <div className="mb-3.5 text-[17px] font-bold tracking-[-0.01em]">
                 Frequently bought together
               </div>
-              <div className="grid grid-cols-4 gap-3.5">
-                {RECENT.slice(0, 4).map((r) => (
-                  <Link
-                    href="/product"
-                    key={r.name}
-                    className="rounded-[11px] border border-[#E5E8EE] bg-white p-2.5 text-inherit no-underline hover:border-[#101725]"
-                  >
-                    <div className="relative mb-2.5 aspect-square overflow-hidden rounded-lg">
-                      <Image
-                        src={storefrontImg(r.img)}
-                        alt={r.name}
-                        fill
-                        className="object-cover"
-                      />
-                    </div>
-                    <div className="min-h-8 text-xs leading-[1.35] font-medium">
-                      {r.name}
-                    </div>
-                    <div className="mt-1.5 text-[13px] font-extrabold">
-                      Rs {r.price}
-                    </div>
-                  </Link>
-                ))}
-              </div>
             </div>
           </div>
 
