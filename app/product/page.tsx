@@ -34,24 +34,12 @@ export default function ProductPage() {
           {/* Gallery */}
           <div>
             <div className="relative mb-3 aspect-square overflow-hidden rounded-2xl bg-[#F6F7F9]">
-              <Image
-                src={storefrontImg(p.img)}
-                alt={p.name}
-                fill
-                className="object-cover"
-              />
               <div className="absolute top-3.5 left-3.5 rounded-md bg-[#E4614C] px-2.5 py-1.5 text-[10.5px] font-bold text-white">
                 -22% TODAY
               </div>
             </div>
             <div className="grid grid-cols-6 gap-2.5">
               <div className="relative aspect-square overflow-hidden rounded-lg border-2 border-[#2563EB]">
-                <Image
-                  src={storefrontImg(p.img)}
-                  alt=""
-                  fill
-                  className="object-cover"
-                />
               </div>
               {[0, 1, 2].map((i) => (
                 <div
