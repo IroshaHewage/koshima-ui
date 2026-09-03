@@ -81,180 +81,13 @@ export const TILES = [
 ]
 
 export const FLASH_ITEMS = [
-  {
-    name: "Kumkumadi Radiance Oil 15ml",
-    price: "2,450",
-    was: "3,900",
-    sold: "78%",
-    left: "12",
-    img: "flash-1",
-  },
-  {
-    name: "Aloe & Cucumber Gel 200g",
-    price: "890",
-    was: "1,350",
-    sold: "64%",
-    left: "31",
-    img: "flash-2",
-  },
-  {
-    name: "SPF 50 Mineral Sunscreen",
-    price: "3,180",
-    was: "4,600",
-    sold: "91%",
-    left: "4",
-    img: "flash-3",
-  },
-  {
-    name: "Ceylon Cinnamon Body Butter",
-    price: "1,740",
-    was: "2,300",
-    sold: "45%",
-    left: "55",
-    img: "flash-4",
-  },
-  {
-    name: "Charcoal Detox Face Wash",
-    price: "1,090",
-    was: "1,700",
-    sold: "82%",
-    left: "9",
-    img: "flash-5",
-  },
 ]
 
-export const PRODUCTS: Product[] = [
-  {
-    id: "AYU-VITC-30",
-    slug: "vitamin-c-brightening-serum",
-    seller: "AYURMA HERBALS",
-    name: "10% Vitamin C Brightening Serum 30ml",
-    rating: "4.8",
-    reviews: "1,204",
-    price: "4,850",
-    was: "6,200",
-    badge: "-22%",
-    img: "product-1",
-  },
-  {
-    id: "CGL-COCO-200",
-    slug: "virgin-coconut-hair-oil",
-    seller: "CEYLON GLOW",
-    name: "Virgin Coconut Hair Oil 200ml, cold pressed",
-    rating: "4.7",
-    reviews: "862",
-    price: "1,290",
-    was: "1,650",
-    badge: "-21%",
-    img: "product-2",
-  },
-  {
-    id: "NIM-NIAC-30",
-    slug: "niacinamide-zinc-serum",
-    seller: "NIMNA COSMETICS",
-    name: "Niacinamide 5% + Zinc Blemish Serum",
-    rating: "4.6",
-    reviews: "540",
-    price: "3,600",
-    was: "4,300",
-    badge: "NEW",
-    img: "product-3",
-  },
-  {
-    id: "KAN-SAND-150",
-    slug: "sandalwood-turmeric-face-wash",
-    seller: "KANDY HERBALS",
-    name: "Sandalwood & Turmeric Face Wash 150ml",
-    rating: "4.9",
-    reviews: "2,077",
-    price: "980",
-    was: "1,250",
-    badge: "BEST",
-    img: "product-4",
-  },
-  {
-    id: "VIT-D3-60",
-    slug: "vitamin-d3-capsules",
-    seller: "VITHANAGE PHARMA",
-    name: "Vitamin D3 2000 IU · 60 capsules",
-    rating: "4.5",
-    reviews: "318",
-    price: "2,750",
-    was: "3,100",
-    badge: "-11%",
-    img: "product-5",
-  },
-  {
-    id: "CGL-HYAL-50",
-    slug: "hyaluronic-hydra-boost-moisturiser",
-    seller: "CEYLON GLOW",
-    name: "Hyaluronic Hydra Boost Moisturiser 50g",
-    rating: "4.7",
-    reviews: "705",
-    price: "3,950",
-    was: "4,900",
-    badge: "-19%",
-    img: "product-6",
-  },
-  {
-    id: "AYU-TONR-120",
-    slug: "neem-tea-tree-toner",
-    seller: "AYURMA HERBALS",
-    name: "Neem & Tea Tree Anti-acne Toner 120ml",
-    rating: "4.4",
-    reviews: "221",
-    price: "1,480",
-    was: "1,900",
-    badge: "-22%",
-    img: "product-7",
-  },
-  {
-    id: "LOT-ROSE-100",
-    slug: "rose-water-facial-mist",
-    seller: "LOTUS LANKA",
-    name: "Rose Water Facial Mist, steam distilled",
-    rating: "4.8",
-    reviews: "1,530",
-    price: "760",
-    was: "990",
-    badge: "BEST",
-    img: "product-8",
-  },
-  {
-    id: "NIM-LIPS-01",
-    slug: "matte-liquid-lipstick",
-    seller: "NIMNA COSMETICS",
-    name: "Matte Liquid Lipstick — Kurunegala Clay",
-    rating: "4.3",
-    reviews: "188",
-    price: "1,650",
-    was: "2,100",
-    badge: "NEW",
-    img: "product-9",
-  },
-  {
-    id: "VIT-EFFC-20",
-    slug: "zinc-vitamin-c-effervescent",
-    seller: "VITHANAGE PHARMA",
-    name: "Zinc + Vitamin C Effervescent · 20 tabs",
-    rating: "4.6",
-    reviews: "412",
-    price: "1,120",
-    was: "1,400",
-    badge: "-20%",
-    img: "product-10",
-  },
-]
+export const PRODUCTS: Product[] = []
 
 export const PDP_PRODUCT = PRODUCTS[0]
 
 export const RECENT = [
-  { name: "Argan Repair Hair Mask 250g", price: "2,190", img: "recent-1" },
-  { name: "Green Tea Clay Mask 100g", price: "1,340", img: "recent-2" },
-  { name: "Baby Gentle Wash 400ml", price: "1,880", img: "recent-3" },
-  { name: "Retinol 0.3% Night Serum", price: "5,400", img: "recent-4" },
-  { name: "Herbal Hair Growth Tonic", price: "2,650", img: "recent-5" },
-  { name: "Bamboo Charcoal Soap ×3", price: "690", img: "recent-6" },
 ]
 
 export const FOOTER_COLS = [
@@ -361,33 +194,9 @@ export const FACETS = [
 ]
 
 export const SUGGESTIONS = [
-  { q: "vitamin c serum", n: "148 products" },
-  { q: "vitamin c serum 20%", n: "32 products" },
-  { q: "vitamin c serum for oily skin", n: "54 products" },
-  { q: "vitamin c + niacinamide", n: "76 products" },
-  { q: "vitamin c සෙරම්", n: "61 products" },
-  { q: "vitamin c face wash", n: "43 products" },
 ]
 
 export const SUGGEST_PRODUCTS = [
-  {
-    name: "10% Vitamin C Brightening Serum 30ml",
-    seller: "AYURMA HERBALS",
-    price: "4,850",
-    img: "product-1",
-  },
-  {
-    name: "Vitamin C + Ferulic Day Serum 20ml",
-    seller: "CEYLON GLOW",
-    price: "6,200",
-    img: "product-7",
-  },
-  {
-    name: "Vitamin C Effervescent · 20 tabs",
-    seller: "VITHANAGE PHARMA",
-    price: "1,120",
-    img: "product-10",
-  },
 ]
 
 // ---------- PDP ----------
@@ -418,318 +227,38 @@ export const RATING_BARS = [
 ]
 
 export const REVIEW_LIST = [
-  {
-    initials: "DS",
-    name: "Dilini S.",
-    verified: true,
-    meta: "30ml · 10% · 12 July 2026",
-    stars: "★★★★★",
-    body: "Three weeks in and the dullness around my cheeks has genuinely lifted. It does not pill under sunscreen, which was my problem with the two imported serums I tried before. Packaging arrived sealed and boxed properly.",
-    helpful: "48",
-    hasPhotos: true,
-    hasReply: true,
-  },
-  {
-    initials: "RP",
-    name: "Ravindu P.",
-    verified: true,
-    meta: "50ml · 20% · 4 July 2026",
-    stars: "★★★★☆",
-    body: "Good value against imported equivalents. Slight tingle for the first few days on the 20%. Delivery to Matara took three days.",
-    helpful: "21",
-    hasPhotos: false,
-    hasReply: false,
-  },
-  {
-    initials: "AF",
-    name: "Aisha F.",
-    verified: true,
-    meta: "30ml · 10% · 28 June 2026",
-    stars: "★★★★★",
-    body: "Bought two more for my sisters. The dropper is glass and the bottle is amber so it actually keeps.",
-    helpful: "15",
-    hasPhotos: true,
-    hasReply: false,
-  },
-  {
-    initials: "MK",
-    name: "Mohamed K.",
-    verified: false,
-    meta: "19 June 2026",
-    stars: "★★★☆☆",
-    body: "Works, but I expected a pump rather than a dropper at this price.",
-    helpful: "6",
-    hasPhotos: false,
-    hasReply: false,
-  },
 ]
 
 // ---------- Compare ----------
 
 export const COMPARE_COLS = [
-  {
-    seller: "AYURMA HERBALS",
-    name: "10% Vitamin C Brightening Serum 30ml",
-    price: "4,850",
-    img: "product-1",
-  },
-  {
-    seller: "CEYLON GLOW",
-    name: "Vitamin C + Ferulic Day Serum 20ml",
-    price: "6,200",
-    img: "product-7",
-  },
-  {
-    seller: "NIMNA COSMETICS",
-    name: "Niacinamide 5% + Zinc Serum 30ml",
-    price: "3,600",
-    img: "product-3",
-  },
 ]
 
 export const COMPARE_ROWS = [
-  { label: "Rating", a: "★ 4.8 (1,204)", b: "★ 4.6 (388)", c: "★ 4.6 (540)" },
-  {
-    label: "Key active",
-    a: "L-ascorbic acid 10%",
-    b: "L-ascorbic 15% + ferulic",
-    c: "Niacinamide 5% + zinc",
-  },
-  { label: "Volume", a: "30 ml", b: "20 ml", c: "30 ml" },
-  { label: "Price per ml", a: "Rs 161.67", b: "Rs 310.00", c: "Rs 120.00" },
-  {
-    label: "Skin type",
-    a: "All, incl. sensitive",
-    b: "Normal to oily",
-    c: "Oily, acne-prone",
-  },
-  { label: "Fragrance free", a: "Yes", b: "No", c: "Yes" },
-  { label: "Origin", a: "Sri Lanka", b: "Sri Lanka", c: "Sri Lanka" },
-  { label: "Package weight", a: "0.18 kg", b: "0.14 kg", c: "0.19 kg" },
-  {
-    label: "Ships internationally",
-    a: "Yes — all groups",
-    b: "Yes — groups A–E",
-    c: "Yes — all groups",
-  },
-  {
-    label: "Availability",
-    a: "In stock",
-    b: "In stock",
-    c: "Low stock — 6 left",
-  },
 ]
 
 // ---------- Wishlist ----------
 
 export const WISH_ITEMS = [
-  {
-    seller: "AYURMA HERBALS",
-    name: "10% Vitamin C Brightening Serum 30ml",
-    saved: "12 July",
-    price: "4,850",
-    delta: "↓ Rs 350",
-    stock: "In stock",
-    stockOk: true,
-    btn: "Add to cart",
-    img: "product-1",
-  },
-  {
-    seller: "CEYLON GLOW",
-    name: "Hyaluronic Hydra Boost Moisturiser 50g",
-    saved: "9 July",
-    price: "3,950",
-    delta: "",
-    stock: "In stock",
-    stockOk: true,
-    btn: "Add to cart",
-    img: "product-6",
-  },
-  {
-    seller: "NIMNA COSMETICS",
-    name: "Matte Liquid Lipstick — Kurunegala Clay",
-    saved: "2 July",
-    price: "1,650",
-    delta: "↓ Rs 450",
-    stock: "Low stock — 6 left",
-    stockOk: false,
-    btn: "Add to cart",
-    img: "product-9",
-  },
-  {
-    seller: "KANDY HERBALS",
-    name: "Sandalwood & Turmeric Face Wash 150ml",
-    saved: "28 June",
-    price: "980",
-    delta: "",
-    stock: "Out of stock",
-    stockOk: false,
-    btn: "Notify me",
-    img: "product-4",
-  },
-  {
-    seller: "VITHANAGE PHARMA",
-    name: "Vitamin D3 2000 IU · 60 capsules",
-    saved: "21 June",
-    price: "2,750",
-    delta: "",
-    stock: "In stock",
-    stockOk: true,
-    btn: "Add to cart",
-    img: "product-5",
-  },
-  {
-    seller: "LOTUS LANKA",
-    name: "Rose Water Facial Mist 100ml",
-    saved: "14 June",
-    price: "760",
-    delta: "",
-    stock: "In stock",
-    stockOk: true,
-    btn: "Add to cart",
-    img: "product-8",
-  },
 ]
 
 // ---------- Cart ----------
 
 export const CART_GROUPS = [
-  {
-    seller: "Ayurma Herbals",
-    location: "KURUNEGALA",
-    ship: "Free shipping unlocked",
-    shipOk: true,
-    note: "Dispatched by Fardar Express · estimated arrival Wed 30 Jul",
-    items: [
-      {
-        name: "10% Vitamin C Brightening Serum 30ml",
-        variant: "30ml · 10% strength",
-        sku: "AYU-VITC-30",
-        weight: "0.18 kg",
-        qty: 2,
-        total: "9,700",
-        was: "12,400",
-        img: "product-1",
-      },
-      {
-        name: "Neem & Tea Tree Anti-acne Toner 120ml",
-        variant: "120ml",
-        sku: "AYU-TONR-120",
-        weight: "0.24 kg",
-        qty: 1,
-        total: "1,480",
-        was: "1,900",
-        img: "product-7",
-      },
-    ],
-  },
-  {
-    seller: "Ceylon Glow",
-    location: "COLOMBO 05",
-    ship: "Rs 300 shipping",
-    shipOk: false,
-    note: "Add Rs 6,050 more from this seller for free shipping",
-    items: [
-      {
-        name: "Hyaluronic Hydra Boost Moisturiser 50g",
-        variant: "50g jar",
-        sku: "CGL-HYAL-50",
-        weight: "0.22 kg",
-        qty: 1,
-        total: "3,950",
-        was: "4,900",
-        img: "product-6",
-      },
-    ],
-  },
 ]
 
 export const CART_SUMMARY = [
-  { k: "Subtotal (3 items)", v: "Rs 15,130", positive: false },
-  { k: "Seller discounts", v: "− Rs 2,270", positive: true },
-  { k: "Voucher KOSHIMA500", v: "− Rs 500", positive: true },
-  { k: "Shipping (2 sub-orders)", v: "Rs 300", positive: false },
-  { k: "VAT 18% (charged separately)", v: "Rs 2,660", positive: false },
 ]
 
 export const MINI_CART = [
-  {
-    name: "10% Vitamin C Serum 30ml",
-    seller: "AYURMA HERBALS",
-    qty: "2",
-    total: "9,700",
-    img: "product-1",
-  },
-  {
-    name: "Neem & Tea Tree Toner 120ml",
-    seller: "AYURMA HERBALS",
-    qty: "1",
-    total: "1,480",
-    img: "product-7",
-  },
-  {
-    name: "Hydra Boost Moisturiser 50g",
-    seller: "CEYLON GLOW",
-    qty: "1",
-    total: "3,950",
-    img: "product-6",
-  },
 ]
 
 // ---------- Checkout: address ----------
 
 export const ADDRESSES = [
-  {
-    name: "Nimasha Perera — Home",
-    tag: "DEFAULT",
-    tagTone: "blue",
-    line: "No. 42/3, Kandy Road, Wehera, Kurunegala 60000, North Western, Sri Lanka",
-    phone: "+94 77 412 8890",
-    selected: true,
-  },
-  {
-    name: "Nimasha Perera — Office",
-    tag: "WORK",
-    tagTone: "gray",
-    line: "Level 6, Access Tower II, 278 Union Place, Colombo 02, Western, Sri Lanka",
-    phone: "+94 11 730 5500",
-    selected: false,
-  },
-  {
-    name: "Sanduni Perera — London",
-    tag: "INTERNATIONAL",
-    tagTone: "amber",
-    line: "18 Marchmont Street, Bloomsbury, London WC1N 1AP, United Kingdom",
-    phone: "+44 7700 900412",
-    selected: false,
-  },
 ]
 
 export const ADDRESS_FIELDS = [
-  { label: "Full name", value: "Nimasha Perera", wide: false, select: false },
-  {
-    label: "Mobile number",
-    value: "+94 77 412 8890",
-    wide: false,
-    select: false,
-  },
-  { label: "Country", value: "Sri Lanka", wide: false, select: true },
-  { label: "Province", value: "North Western", wide: false, select: true },
-  { label: "District", value: "Kurunegala", wide: false, select: true },
-  { label: "City / town", value: "Wehera", wide: false, select: true },
-  {
-    label: "Address line",
-    value: "No. 42/3, Kandy Road",
-    wide: true,
-    select: false,
-  },
-  { label: "Postal code", value: "60000", wide: false, select: false },
-  {
-    label: "Delivery note (optional)",
-    value: "Leave with security if not home",
-    wide: false,
-    select: false,
-  },
 ]
 
 // ---------- Checkout: shipping (Fardar Express only) ----------
