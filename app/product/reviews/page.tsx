@@ -80,64 +80,6 @@ export default function ReviewsPage() {
               </button>
             </div>
           </div>
-
-          <div className="grid gap-3">
-            {REVIEW_LIST.map((r) => (
-              <div
-                key={r.name}
-                className="rounded-xl border border-[#E5E8EE] bg-white p-5"
-              >
-                <div className="mb-3 flex items-center gap-2.5">
-                  <div className="flex h-[34px] w-[34px] items-center justify-center rounded-full bg-[#F1F3F6] text-xs font-bold text-[#8A93A3]">
-                    {r.initials}
-                  </div>
-                  <div className="flex-1">
-                    <div className="flex items-center gap-2">
-                      <span className="text-[13px] font-bold">{r.name}</span>
-                      <span
-                        className={`rounded px-1.5 py-1 text-[9.5px] font-semibold ${r.verified ? "bg-[#E7F5EF] text-[#12805C]" : "bg-[#F1F3F6] text-[#8A93A3]"}`}
-                      >
-                        {r.verified ? "VERIFIED PURCHASE" : "UNVERIFIED"}
-                      </span>
-                    </div>
-                    <div className="mt-1 text-[11.5px] text-[#98A1AF]">
-                      {r.meta}
-                    </div>
-                  </div>
-                  <span className="text-[12.5px] font-semibold text-[#B45309]">
-                    {r.stars}
-                  </span>
-                </div>
-                <p className="mb-3 text-[13.5px] leading-relaxed text-pretty text-[#48505E]">
-                  {r.body}
-                </p>
-                {r.hasPhotos ? (
-                  <div className="mb-3 flex gap-2">
-                    <div className="h-[58px] w-[58px] rounded-lg bg-[#F1F3F6]" />
-                    <div className="h-[58px] w-[58px] rounded-lg bg-[#F1F3F6]" />
-                  </div>
-                ) : null}
-                <div className="flex items-center gap-4 text-xs font-medium text-[#8A93A3]">
-                  <span className="cursor-pointer">
-                    👍 Helpful ({r.helpful})
-                  </span>
-                  <span className="cursor-pointer">⚑ Report</span>
-                </div>
-                {r.hasReply ? (
-                  <div className="mt-3.5 rounded-r-lg border-l-2 border-[#2563EB] bg-[#F6F7F9] px-4 py-3.5">
-                    <div className="mb-1.5 text-xs font-bold text-[#2563EB]">
-                      Ayurma Herbals replied
-                    </div>
-                    <div className="text-[12.5px] leading-relaxed text-[#48505E]">
-                      Thank you Dilini. The 20% strength is in stock now if you
-                      would like to step up — message us for a
-                      returning-customer code.
-                    </div>
-                  </div>
-                ) : null}
-              </div>
-            ))}
-          </div>
         </div>
       </div>
 
