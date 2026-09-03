@@ -113,7 +113,7 @@ export default function ProductPage() {
                   Rs .00
                 </span>
                 <span className="text-base text-[#B08880] line-through">
-                  Rs {p.was}.00
+                  Rs .00
                 </span>
                 <span className="rounded-md bg-[#E4614C] px-2 py-1.5 text-[11.5px] font-bold text-white">
                   SAVE Rs 1,350
