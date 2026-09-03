@@ -230,20 +230,6 @@ export function Header({ variant = "full" }: { variant?: "full" | "slim" }) {
                 3
               </div>
             </Link>
-            <div className="h-8 w-px bg-[#EEF0F4]" />
-            <div className="flex cursor-pointer items-center gap-[9px]">
-              <div className="flex h-[34px] w-[34px] items-center justify-center rounded-full bg-[#EEF3FE] text-[13px] font-bold text-[#2563EB]">
-                NP
-              </div>
-              <div>
-                <div className="text-[10.5px] font-medium text-[#98A1AF]">
-                  Hello,
-                </div>
-                <div className="mt-[3px] text-[12.5px] font-bold">
-                  Nimasha ▾
-                </div>
-              </div>
-            </div>
           </div>
         </div>
         <div className="mx-auto flex h-11 max-w-[1360px] items-center gap-[26px] border-t border-[#F3F5F8] px-7">
