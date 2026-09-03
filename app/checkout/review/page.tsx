@@ -71,51 +71,7 @@ export default function CheckoutReviewPage() {
                 </Link>
               </div>
             </div>
-
-            {CART_GROUPS.map((g) => (
-              <div
-                key={g.seller}
-                className="overflow-hidden rounded-xl border border-[#E5E8EE] bg-white"
-              >
-                <div className="flex items-center gap-2.5 border-b border-[#EEF0F4] bg-[#FAFBFC] p-[14px_22px]">
-                  <span className="text-[13px] font-bold">{g.seller}</span>
-                  <span className="font-mono text-[11.5px] text-[#98A1AF]">
-                    {g.location}
-                  </span>
-                  <span className="ml-auto font-mono text-[11.5px] text-[#98A1AF]">
-                    {g.note}
-                  </span>
-                </div>
-                {g.items.map((i) => (
-                  <div
-                    key={i.sku}
-                    className="grid grid-cols-[56px_1fr_80px_110px] items-center gap-4 border-b border-[#F3F5F8] p-[14px_22px] last:border-b-0"
-                  >
-                    <div className="relative h-[56px] w-[56px] overflow-hidden rounded-lg">
-                      <Image
-                        src={storefrontImg(i.img)}
-                        alt={i.name}
-                        fill
-                        className="object-cover"
-                      />
-                    </div>
-                    <div>
-                      <div className="text-[13px] font-medium">{i.name}</div>
-                      <div className="mt-1.5 font-mono text-[11.5px] text-[#98A1AF]">
-                        {i.sku} · {i.variant}
-                      </div>
-                    </div>
-                    <div className="text-[12.5px] font-medium text-[#8A93A3]">
-                      × {i.qty}
-                    </div>
-                    <div className="text-right text-sm font-bold">
-                      Rs {i.total}
-                    </div>
-                  </div>
-                ))}
-              </div>
-            ))}
-
+            
             <div className="flex items-center gap-3 rounded-[11px] bg-[#E7F5EF] p-[15px_20px]">
               <span className="text-[15px]">✓</span>
               <div className="text-[12.5px] leading-relaxed text-[#0E6B4E]">
