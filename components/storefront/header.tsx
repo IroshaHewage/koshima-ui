@@ -99,45 +99,9 @@ function SearchBox() {
           <div className="border-b border-[#EEF0F4] px-4 py-3 font-mono text-[10.5px] font-semibold tracking-[0.06em] text-[#98A1AF]">
             SUGGESTIONS
           </div>
-          {SUGGESTIONS.map((s) => (
-            <div
-              key={s.q}
-              onClick={() => submit(s.q)}
-              className="flex cursor-pointer items-center gap-3 px-4 py-2.5 hover:bg-[#F6F7F9]"
-            >
-              <span className="text-[13px] text-[#98A1AF]">⌕</span>
-              <span className="flex-1 text-[13.5px]">{s.q}</span>
-              <span className="font-mono text-[11.5px] text-[#B3BAC6]">
-                {s.n}
-              </span>
-            </div>
-          ))}
           <div className="border-t border-b border-[#EEF0F4] px-4 py-3 font-mono text-[10.5px] font-semibold tracking-[0.06em] text-[#98A1AF]">
             TOP PRODUCTS
           </div>
-          {SUGGEST_PRODUCTS.map((p) => (
-            <Link
-              key={p.name}
-              href="/product"
-              className="flex items-center gap-3 px-4 py-2.5 text-inherit no-underline hover:bg-[#F6F7F9]"
-            >
-              <div className="relative h-[42px] w-[42px] flex-none overflow-hidden rounded-md">
-                <Image
-                  src={storefrontImg(p.img)}
-                  alt={p.name}
-                  fill
-                  className="object-cover"
-                />
-              </div>
-              <div className="flex-1">
-                <div className="text-[13px] leading-[1.3]">{p.name}</div>
-                <div className="mt-1 font-mono text-[11px] text-[#98A1AF]">
-                  {p.seller}
-                </div>
-              </div>
-              <div className="text-[13px] font-bold">Rs {p.price}</div>
-            </Link>
-          ))}
           <div className="bg-[#F6F7F9] px-4 py-2.5 font-mono text-[11.5px] text-[#98A1AF]">
             ↑↓ to navigate · enter to search
           </div>
